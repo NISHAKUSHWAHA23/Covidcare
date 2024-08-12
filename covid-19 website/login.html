@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<title>LOG IN</title>
+	<link rel="stylesheet"
+		href="css/login.css">
+</head>
+
+<body>
+    
+     <div class="alert alert-success 
+            alert-dismissible fade show" role="alert">
+    
+           
+            <button type="button" class="close"
+                data-dismiss="alert" aria-label="Close"> 
+               
+            </button> 
+        </div> 
+     <div class="alert alert-danger 
+            alert-dismissible fade show" role="alert"> 
+       
+    
+       <button type="button" class="close" 
+            data-dismiss="alert aria-label="Close">
+            
+       </button> 
+     </div> 
+        
+    <div class="alert alert-danger 
+            alert-dismissible fade show" role="alert">
+    
+        
+        <button type="button" class="close" 
+            data-dismiss="alert" aria-label="Close"> 
+            
+        </button>
+       </div> 
+   
+    
+    
+	<header>
+		<form  action="userloginconn.php" method = "POST">
+		<h1 class="heading">LOG IN AND SIGN UP</h1>
+		<h3 class="title">covid-19 vac. mgt. sys. login & signup</h3>
+	</header>
+
+	<!-- container div -->
+	<div class="container">
+
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<div class="login-box">
+				<input type="email"
+					class="email ele" name="username"
+					placeholder="youremail@email.com" required>
+				<input type="password" name="password"
+					class="password ele"
+					placeholder="password" required>
+					<ul class="nav-links">
+                <li><a href="index.html">
+				<button  type="submit" class="clkbtn">Login</button></a>
+			
+			</li></ul></form>
+
+			</div>
+            <form method="post" action="">
+			<!-- signup form -->
+			<div class="signup-box">
+				<input type="text"
+					class="name ele" name="name"
+					placeholder="Enter your name">
+				<input type="email"
+					class="email ele" name="email"
+					placeholder="youremail@email.com">
+				<input type="password" name="password"
+					class="password ele"
+					placeholder="password">
+				<input type="password"
+					class="password ele" name="cpass"
+					placeholder="Confirm password">
+				<button href="index.html" class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+</form>
+	<script src="js/login.js"></script>
+</body>
+
+</html>
